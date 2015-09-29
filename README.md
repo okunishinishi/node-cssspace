@@ -28,7 +28,7 @@ cssspace
 <!-- Description Start -->
 <a name="description"></a>
 
-Rewriter each selectors in css.
+Rewrite each selectors in css.
 
 <!-- Description End -->
 
@@ -61,8 +61,15 @@ $ npm install cssspace --save
 Usage
 ---------
 
-```javascript
+### Add Parent Selector
 
+`cssspace.addParent(css, parent)` method parses css string and add parent selector to each selectors.
+
+```javascript
+var cssspace = require('cssspace');
+
+var converted = cssspace.addParent('header{background:#FFF}', 'main');
+console.log(converted); // -> "main header {\n  background: #FFF;\n}"
 ```
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->

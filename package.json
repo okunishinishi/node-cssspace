@@ -1,6 +1,6 @@
 {
   "name": "cssspace",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Rewrite each selectors in css.",
   "main": "lib",
   "scripts": {
