@@ -61,9 +61,9 @@ $ npm install cssspace --save
 Usage
 ---------
 
-### Add Parent Selector
+### Wrap Each Selectors
 
-`cssspace.addParent(css, parent)` method parses css string and add parent selector to each selectors.
+`cssspace.wrap(css, parent)` method parses css string and add parent selector to each selectors.
 
 ```javascript
 var cssspace = require('cssspace');
